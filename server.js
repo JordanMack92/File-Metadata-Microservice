@@ -24,6 +24,7 @@ if (!process.env.DISABLE_XORIGIN) {
 }
 
 app.use('/public', express.static(process.cwd() + '/public'));
+app.use('/app', express.static(process.cwd()+'/app'));
 routes(app);
 
 
